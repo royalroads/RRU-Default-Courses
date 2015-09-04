@@ -19,4 +19,4 @@ defined('MOODLE_INTERNAL') || die();
 $plugin->version   = 2015071000;
 $plugin->requires  = 2014111003; // Requires Moodle 2.8.3.
 $plugin->component = 'local_defaultcourses';
-$plugin->cron      = 300; // Hourly = 3600
+$plugin->cron      = 3600; // Hourly = 3600
