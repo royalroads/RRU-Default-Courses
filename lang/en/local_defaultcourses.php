@@ -28,6 +28,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Default Courses';
+$string['crontitle']  = 'Default Courses';
 
 // Settings.
 $string['definecourseids'] = 'Default course(s)';
