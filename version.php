@@ -16,7 +16,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2015100600;        // The current plugin version.
+$plugin->version   = 2015110200;        // The current plugin version.
 $plugin->requires  = 2015051101;        // Requires this Moodle version (2.9.1).
 $plugin->component = 'local_defaultcourses';
-$plugin->cron      = 3600; // Hourly = 3600
