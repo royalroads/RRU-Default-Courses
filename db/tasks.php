@@ -15,22 +15,25 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * local_defaultcourses.php, collection of language strings
+ * Definition of Default Courses scheduled task(s).
  *
- *
- * 2011-11-15
- * @package      plug-in
- * @subpackage   Default_Courses
- * @copyright    2012 Andrew Zoltay, Royal Roads University
- * @license      http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package   defaultcourses
+ * @category  task
+ * @copyright 2015 Royal Roads University
+ * @author    Gerald Albion
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Default Courses';
-$string['crontitle']  = 'Default Courses';
-
-// Settings.
-$string['definecourseids'] = 'Default course(s)';
-$string['definecourseids_help'] = 'Use the "Ctrl" key or the "shift" key to select multiple courses in which all users should be enroled.' .
-                                  'NOTE: selecting many courses may affect performance';
+$tasks = array(
+    array(
+        'classname' => 'local_defaultcourses\task\defaultcourses',
+        'blocking'  => 0,    // Non-blocking.
+        'minute'    => '0',  // Hourly on the hour.
+        'hour'      => '*',
+        'day'       => '*',
+        'dayofweek' => '*',
+        'month'     => '*'
+    )
+);

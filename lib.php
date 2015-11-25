@@ -36,16 +36,6 @@ require_once($CFG->dirroot . "/enrol/locallib.php");
 define('DC_ADMIN_ACCOUNT', 2);
 
 /**
- * Cron interface to enrol users in default courses.
- *
- * @param none.
- * @return none.
- */
-function local_defaultcourses_cron() {
-    dc_enrol_default_courses();
-}
-
-/**
  * Purpose: Enrol all users who are not currently enroled as students
  *          in the courses defined as default courses
  *
