@@ -61,11 +61,11 @@ class local_dc_test extends advanced_testcase {
         $this->assertEquals(0, count($initialenrolments));
 
         // Create three dummy users.
-        $this->user  = $this->getDataGenerator()->create_user(array('email' => 'gerald.albion@royalroads.ca',
+        $this->user  = $this->getDataGenerator()->create_user(array('email' => 'test@example.com',
                         'username' => 'dctestuser'));
-        $this->user2 = $this->getDataGenerator()->create_user(array('email' => 'gerald.albion@royalroads.ca',
+        $this->user2 = $this->getDataGenerator()->create_user(array('email' => 'test@example.com',
                         'username' => 'dctestuser2'));
-        $this->user3 = $this->getDataGenerator()->create_user(array('email' => 'gerald.albion@royalroads.ca',
+        $this->user3 = $this->getDataGenerator()->create_user(array('email' => 'test@example.com',
                         'username' => 'dctestuser3'));
 
         // Fetch new enrolments for the dummy course.
@@ -86,7 +86,7 @@ class local_dc_test extends advanced_testcase {
         global $DB;
 
         // Create a dummy user.
-        $this->user  = $this->getDataGenerator()->create_user(array('email' => 'gerald.albion@royalroads.ca',
+        $this->user  = $this->getDataGenerator()->create_user(array('email' => 'test@example.com',
                         'username' => 'dctestuser'));
 
         // Create a dummy page, required to get a dummy course enrolment manager.
@@ -141,11 +141,11 @@ class local_dc_test extends advanced_testcase {
         $this->assertEquals(0, $initialenrolcount);
 
         // Create three dummy users.
-        $this->user  = $this->getDataGenerator()->create_user(array('email' => 'gerald.albion@royalroads.ca',
+        $this->user  = $this->getDataGenerator()->create_user(array('email' => 'test@example.com',
                         'username' => 'dctestuser'));
-        $this->user2 = $this->getDataGenerator()->create_user(array('email' => 'gerald.albion@royalroads.ca',
+        $this->user2 = $this->getDataGenerator()->create_user(array('email' => 'test@example.com',
                         'username' => 'dctestuser2'));
-        $this->user3 = $this->getDataGenerator()->create_user(array('email' => 'gerald.albion@royalroads.ca',
+        $this->user3 = $this->getDataGenerator()->create_user(array('email' => 'test@example.com',
                         'username' => 'dctestuser3'));
 
         // Try again to enrol users (three) in the default course.
